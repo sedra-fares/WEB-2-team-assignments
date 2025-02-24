@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Business Plans</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .plan-card {
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+       
+        .subscription-section {
+            position: relative;
+            background: url('image/1696839877222.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+        }
+        .subscription-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .subscription-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+
+<section class="text-center my-4">
+    <h2 class="fw-bold">Discover Our <span class="text-primary">Best Plans</span></h2>
+</section>
+
+
+<section class="container">
+    <div class="row text-center">
+      
+        <div class="col-md-4">
+            <div class="plan-card border p-4">
+                <h4>Starter</h4>
+                <h5 class="text-primary">FREE</h5>
+                <ul class="list-unstyled">
+                    <li>✔ 3 projects</li>
+                    <li>✔ 30-day version history</li>
+                    <li>✔ Up to 2 editors</li>
+                </ul>
+            </div>
+        </div>
+       
+        <div class="col-md-4">
+            <div class="plan-card border p-4 bg-primary text-white">
+                <h4>Starter <span class="badge bg-light text-primary">NEW</span></h4>
+                <h5>$9.99/MO</h5>
+                <ul class="list-unstyled">
+                    <li>✔ 3 projects</li>
+                    <li>✔ 30-day version history</li>
+                    <li>✔ Up to 2 editors</li>
+                </ul>
+            </div>
+        </div>
+      
+        <div class="col-md-4">
+            <div class="plan-card border p-4">
+                <h4>Business</h4>
+                <h5 class="text-primary">$14.99/MO</h5>
+                <ul class="list-unstyled">
+                    <li>✔ 3 projects</li>
+                    <li>✔ 30-day version history</li>
+                    <li>✔ Up to 2 editors</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="subscription-section text-center">
+    <div class="subscription-overlay"></div>
+    <div class="container subscription-content">
+        <h3>We'll suggest the plan that's right for your business</h3>
+        <p>Ready to start your project? Enter your email below.</p>
+        <div class="input-group w-50 mx-auto">
+            <input type="email" class="form-control" placeholder="E-mail">
+            <button class="btn btn-primary">Subscribe</button>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
