@@ -1,19 +1,117 @@
-<!DOCTYPE html>
+
+
+=======
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous">
-    </head>
-    <body>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
-        <style>
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
         
+        <style>
+              
+            #accordionFlushExample .accordion-button::after {
+                content: '+'; 
+                font-size: 24px;
+                font-weight: bold;
+                color: blue;
+                transition: transform 0.3s ease-in-out;
+            }
+            
+            
+            #accordionFlushExample .accordion-button:not(.collapsed)::after {
+                content: '-';
+            }
+            
+            
+            #accordionFlushExample .accordion-button::before,
+            #accordionFlushExample .accordion-button::after {
+                background-image: none !important;
+            }
+            
+            
+            #accordionFlushExample .accordion-button {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            
+            #accordionFlushExample .accordion-button:focus {
+                box-shadow: none;
+            }
+          
+            /*///////////////////////////////////////////////////////*/
+
+
+            #imageContainer {
+    position: relative;
+    width: fit-content;
+}
+
+#firstImageWrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#firstImage {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Overlapping Effect */
+#secondImageWrapper {
+    position: absolute;
+    bottom: -30px; /* Adjust for overlap */
+    left: 60px; /* Adjust positioning */
+}
+
+#secondImage {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+            @media (max-width: 768px) {
+               #img-container{
+                flex-wrap: wrap;
+               }
+            }
+
+/* Blue Decorative Bars */
+#topRightBar, #bottomLeftBar {
+    position: absolute;
+    width: 8px;
+    height: 60px;
+    background-color: blue;
+}
+
+#topRightBar {
+    top: 10px;
+    right: 10px;
+}
+
+#bottomLeftBar {
+    bottom: 10px;
+    left: 10px;
+}
+/*///////////////////////////////////////////////////////////*/
         .testimonial-card {
             padding: 20px;
             border-radius: 10px;
@@ -32,9 +130,448 @@
             top: 10px;
             right: 10px; 
         }
-    </style>
+body {
+                background-color: #f8f9fa;
+            }
+            #services-section {
+                text-align: center;
+                padding: 50px 0;
+            }
+            #services-title {
+                font-weight: bold;
+            }
+            #highlight {
+                color: blue;
+            }
+            #services-description {
+                color: gray;
+            }
+            #service-container {
+                margin-top: 20px;
+            }
+            .service-card {
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+                margin-bottom: 20px;
+            }
+            .service-img {
+                width: 60px;
+                margin-bottom: 15px;
+            }
+            .service-title {
+                font-weight: bold;
+            }
+            .service-link {
+                color: blue;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .service-link:hover {
+                text-decoration: underline;
+            }
+            /****/
+            .btn-primary {
+        background-color: #1100ff;
+        border-color: #1100ff;
+      }
+      .btn-primary:hover {
+        background-color: #ffffff !important;
+        color: #1100ff !important;
+        border-color: #1100ff !important;
+      }
+      .btn-light:hover {
+        background-color: #1100ff !important;
+        color: white !important;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .s {
+        color: #1100ff;
+      }
+      .paragraph-spacing {
+        line-height: 1.8;
+      }
+      .section-spacing h2 {
+        margin-bottom: 30px;
+      }
 
-        <section class="container text-center py-5">
+      .section-spacing p {
+        margin-bottom: 30px;
+      }
+
+      .section-spacing a {
+        margin-top: 10px;
+      }
+	  .container{
+		margin-top: 70px;
+	  }
+	  .text-white{
+		font-size: 60px;
+	  }
+    /****/
+    #nav-link active {
+    color: hwb(208 2% 6%);
+}
+
+#navbarNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+}
+
+#d-flex-align-items-center gap-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.c {
+    background-color: rgb(15, 19, 64);
+    position: sticky;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-green {
+    background-color: rgb(8, 164, 24);
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.cart-icon {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: 45px;
+}
+.ffa{
+    margin-right: 100px;
+}
+#fffaa{
+    margin-right: 50px;
+}
+.fffaaa{
+    padding: 10px 17px;
+    background-color:rgb(0, 85, 255);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+@media (max-width: 768px) {
+    .c {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #navbarNav {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 90%; 
+        margin: 5px 0; 
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .cart-icon {
+        margin-left: 0;
+        margin-top: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .cart-icon {
+        font-size: 18px;
+    }
+}
+/****/
+                          </style>
+    </head>
+
+    <body>
+        <header>
+          <div class="c">
+            <button class="btn btn-green"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            <button class="btn btn-white">Get Unlimited Downloads</button>
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-white px-4 shadow-sm">
+            <div class="container-fluid">
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <a href=""><img class="ffa" src="image.png" alt="image"></a>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary fw-bold" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Service 1</a></li>
+                                <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Team</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Member 1</a></li>
+                                <li><a class="dropdown-item" href="#">Member 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        
+                      
+                    </ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue"  viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                    <p id="fffaa" class="mb-0 text-dark fw-semibold">+1(505) 555-0125</p>
+                    <button  type="button" class="fffaaa">Get in touch</button>
+                </div>
+            </div>
+        </nav>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="position-relative vh-100">
+                <div class="position-absolute top-0 start-0 w-100 h-100">
+                  <img
+                    src="image2.jpg"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Background"
+                  />
+                </div>
+                <div class="overlay"></div>
+                <div
+                  class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                >
+                  <div class="container text-lg-start text-center">
+                    <div class="row">
+                      <div class="col-md-7 col-lg-6 ms-lg-5">
+                        <h1 class="fw-bold text-white">
+                          We Provide the Best <br>
+                          Value for Business
+                        </h1>
+                        <br>
+                        <p class="fs-5 text-white">
+                          Reliable, proven solutions that meet international industry <br> practices and standards
+          
+                        </p>
+                        <br>
+                        <div class="mt-4">
+                          <a href="#" class="btn btn-primary btn-lg me-2 px-4 py-3"
+                            >Get Started Now</a
+                          >
+                          <a href="#" class="btn btn-light btn-lg text-primary px-5 py-3"
+                            >Our Services</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="container py-5">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 text-lg-start text-center section-spacing">
+                    <p class="text-secondary fw-bold text-uppercase">Welcome to Actual</p>
+                    <h2 class="fw-bold text-dark">
+                      We Are Calculating The <br />
+                      <span class="s">Best Opportunities</span> For You
+                    </h2>
+                    <p class="fs-5 text-muted">
+                      Our team is ready to act as a Leader to solve any issues related to
+                      <br />
+                      the development and implementation of the project. At the same
+                      <br />
+                      time, we understand the peculiarities of the processes of large
+                      <br />
+                      corporations and are able to coordinate technical solutions with
+                      <br />
+                      your internal departments and processes.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg mt-3">About Us</a>
+                  </div>
+          
+                  <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                    <img
+                      src="business-meeting-new-normal-1.webp"
+                      class="img-fluid rounded shadow"
+                      alt="Business Meeting"
+                    />
+                  </div>
+                </div>
+              </div>
+          
+            <!--Services We are Offering-->
+
+            <div class="container" id="services-section">
+                <p class="text-muted">WELCOME TO ACTUAL</p>
+                <h2 id="services-title">Services We are <span id="highlight">Offering</span></h2>
+                <p id="services-description">Your business and your commercial goals are above all else...</p>
+                <div class="row mt-4" id="service-container">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-card">
+                            <img src="/First-Assignment/Great Experiences.png" alt="Great Experiences" class="service-img">
+                            <h5 class="service-title">Great Experiences</h5>
+                            <p>We develop an individual integrated solution for your business...</p>
+                            <a href="#" class="service-link">Read more &gt;</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-card">
+                            <img src="./Digital Marketing.png" alt="Digital Marketing" class="service-img">
+                            <h5 class="service-title">Digital Marketing</h5>
+                            <p>The project is managed by a professional who controls...</p>
+                            <a href="#" class="service-link">Read more &gt;</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-card">
+                            <img src="./Consulting Services.png" alt="Consulting Services" class="service-img">
+                            <h5 class="service-title">Consulting Services</h5>
+                            <p>You trust your business with one team and get a high-quality result...</p>
+                            <a href="#" class="service-link">Read more &gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+       <div
+        class="container-fluid d-flex flex-row m-5" id="img-container"
+       >
+     
+        <div id="imageContainer">
+                <!-- First Image  -->
+                <div id="firstImageWrapper">
+                    <img id="firstImage" 
+                         src="https://ld-wp73.template-help.com/wordpress/prod_30974/v1/wp-content/uploads/2021/04/business-meeting-cafe-1.png" 
+                         alt="business-meeting-cafe">
+                    <div id="topRightBar"></div>
+                </div>
+            
+                <!-- Second Image -->
+                <div id="secondImageWrapper">
+                    <img id="secondImage" 
+                         src="https://ld-wp73.template-help.com/wordpress/prod_30974/v1/wp-content/uploads/2021/04/group-people-working-out-business-plan-office-1.png" 
+                         alt="group-people-working">
+                    <div id="bottomLeftBar"></div>
+                </div>
+            </div>
+        <div class="container-fluid d-flex flex-column" >
+
+
+
+           <p class="text-muted" style="padding-top:50px">Frequently Asked Questions
+           </p>
+
+           <div class="h1">Get <span style="color:blue ;">Every</span> Answer </div>
+
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Which companies do you support?
+                     </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We provide services to companies that are already on the market or are just planning to start their activities there.</div>
+                  </div>
+                </div>
+              
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      What are the benefits of working with you?
+                                        </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We provide services to companies that are already on the market or are just planning to start their activities there.</div>
+                  </div>
+                </div>
+              
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      What is the cost of your services?                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We provide services to companies that are already on the market or are just planning to start their activities there.</div>
+                  </div>
+                </div>
+              
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      What is included in consulting services?                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We provide services to companies that are already on the market or are just planning to start their activities there.</div>
+                  </div>
+                </div>
+              
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      What is your performance based on?                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We provide services to companies that are already on the market or are just planning to start their activities there.</div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+        </div>
+                  <section class="container text-center py-5">
             <h6 class="text-muted">TESTIMONIAL</h6>
             <h2 class="fw-bold">What Our <span class="text-primary">Client’s
                     Say’s</span></h2>
@@ -95,8 +632,12 @@
                 </div>
             </div>
         </section>
-
-        <footer class="bg-dark text-light py-5">
+        </main>
+      
+      
+      
+      
+      <footer class="bg-dark text-light py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 text-center text-md-start">
@@ -142,7 +683,7 @@
                             <li>Contact</li>
                         </ul>
                     </div>
-
+                    
                     <div class="col-md-3">
                         <h5>Services</h5>
                         <ul class="list-unstyled">
@@ -154,6 +695,7 @@
                             <li>Company Secretarial</li>
                         </ul>
                     </div>
+                    
 
                     <div class="col-md-3">
 
@@ -163,38 +705,38 @@
                                 placeholder="Enter Email">
                             <button class="btn btn-primary">Subscribe</button>
                         </div>
-
+                        
                         <h5>Contact for a Free Consultation:</h5>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor"
-                            class="bi bi-telephone-forward" viewBox="0 0 16 16">
-                            <path
-                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.762.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-forward" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.762.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708"/>
+                          </svg>
                         <p><i class="bi bi-telephone text-primary"></i>
                             <strong>+1(505) 555-0125</strong></p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor"
-                            class="bi bi-geo-alt" viewBox="0 0 16 16">
-                            <path
-                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-                            <path
-                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                        </svg>
-
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                              </svg>
+                            
                         <p><i class="bi bi-geo-alt text-primary"></i> 160
-                            Broadway, New York, NY 10038 <br />
+                            Broadway, New York, NY 10038 <br/>
                             102 1st
                             Avenue, New York, NY 100</p>
+                        
 
                     </div>
                 </div>
             </div>
         </footer>
 
+
+        <!-- Bootstrap JavaScript Libraries -->
+       
+
         <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
+
